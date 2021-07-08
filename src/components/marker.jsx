@@ -1,13 +1,17 @@
 import React, { Component } from "react";
-import GoogleMapReact from 'google-map-react';
 
 class Marker extends Component {
-  render(){
-    return(
-      <div className='marker'>
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false
+    };
+  }
 
-      </div>
-    )
+  render() {
+    return (
+      <div className="marker" />
+    );
   }
 }
 
